@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./css/home.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <title>Home</title>
+</head>
+<body>
+
+
+
+  <div>
+      <h1 class="header">SKYRIM ALCHEMY APP</h1>
+  </div>
+  <a class="nav-button1" href="./login.html" onclick="handleLogout()">Logout</a>
+  <a class="nav-button2" href="./ingredients.html">View All Ingredients</a>
+  <div class="container" id="home-container">
+
+      <div id="recipe-form-container">
+
+          <form id="recipe-form">
+
+              <div class="form-group">
+                  <label for="recipe-name-input">Potion Name</label>
+                  <textarea class="form-control" id="recipe-name-input" placeholder="potion name" rows="1"></textarea>
+
+                  <label for="recipe-type-input">Potion Type</label>
+                  <textarea class="form-control" id="recipe-type-input" placeholder="potion or poison?" rows="1"></textarea>
+
+                  <label for="recipe-ingredient1-input">Ingredient One</label>
+                  <textarea class="form-control" id="recipe-ingredient1-input" placeholder="ingredient 1" rows="1"></textarea>
+
+                  <label for="recipe-ingredient2-input">Ingredient Two</label>
+                  <textarea class="form-control" id="recipe-ingredient2-input" placeholder="ingredient 2" rows="1"></textarea>
+
+                  <label for="recipe-ingredient3-input">Ingredient Three</label>
+                  <textarea class="form-control" id="recipe-ingredient3-input" placeholder="ingredient 3" rows="1"></textarea>
+
+                  <label for="recipe-effects-input">Effects</label>
+                  <textarea class="form-control" id="recipe-effects-input" placeholder="add potion effects" rows="3"></textarea>
+
+                  <label for="recipe-value-input">Potion Value</label>
+                  <textarea class="form-control" id="recipe-value-input" placeholder="add value of potion" rows="1"></textarea>
+              </div>
+              <button id="submit-button" type="submit" class="btn btn-primary mt-1">Create Recipe</button>
+          </form>
+
+          <div id="recipe-container" class="container-fluid"></div>
+
+      </div>
+  </div>
+
+  <!------ Modal -------->
+
+  <div class="modal fade" id="recipe-edit-modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="recipe-edit-modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="recipe-edit-modal-title">Edit your recipe</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body d-flex flex-column">
+                  <label for="recipe-name">Potion Name</label>
+                  <textarea class="form-control" id="recipe-name" placeholder="potion name" rows="1"></textarea>
+
+                  <label for="recipe-type">Potion Type</label>
+                  <textarea class="form-control" id="recipe-type" placeholder="potion or poison?" rows="1"></textarea>
+
+                  <label for="recipe-ingredient1">Ingredient One</label>
+                  <textarea class="form-control" id="recipe-ingredient1" placeholder="ingredient 1" rows="1"></textarea>
+
+                  <label for="recipe-ingredient2">Ingredient Two</label>
+                  <textarea class="form-control" id="recipe-ingredient2" placeholder="ingredient 2" rows="1"></textarea>
+
+                  <label for="recipe-ingredient3">Ingredient Three</label>
+                  <textarea class="form-control" id="recipe-ingredient3" placeholder="ingredient 3" rows="1"></textarea>
+
+                  <label for="recipe-effects">Effects</label>
+                  <textarea class="form-control" id="recipe-effects" placeholder="add potion effects" rows="3"></textarea>
+
+                  <label for="recipe-value">Potion Value</label>
+                  <textarea class="form-control" id="recipe-value" placeholder="add value of potion" rows="1"></textarea>
+
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" id="update-recipe-button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"></script>
+<script src="./javascript/home.js" type="application/javascript"></script>
+
+</body>
+</html>

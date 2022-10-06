@@ -1,0 +1,51 @@
+body {
+    background-image: url("../media/1.jpg");
+
+}
+
+
+.container-md {
+    position: absolute;
+    padding: 50px;
+    background: rgba(0, 0, 0, .75);
+    text-align: center;
+    border-radius: 25px;
+    top: 225px;
+    left: 225px;
+    font-size: 40px;
+    color: rgb(59,53,31, .5);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+
+}
+
+.title-container {
+    position: absolute;
+    left: 840px;
+    font-family: Times, Times New Roman, serif;
+    line-height: 5px;
+    text-align: center;
+    color: rgba(255, 255, 255);
+    top: 190px;
+    font-size: 60px
+
+}
+
+#login-descriptor {
+    color: rgb(59,53,31, .9);
+
+}
+
+a:visited { text-decoration: none; color:white; }
+
+#submit-button {
+    background-color:rgb(40,181,60);
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 15px rgb(79,113,50);
+    font-family: Times, Times New Roman, serif;;
+}
+
+#register {
+    font-size: 28px
+}

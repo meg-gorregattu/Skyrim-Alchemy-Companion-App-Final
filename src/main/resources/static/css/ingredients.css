@@ -1,0 +1,71 @@
+body {
+    background-image: url("../media/1.jpg");
+
+}
+
+
+.header {
+  position: static;
+  padding: 40px;
+  text-align: center;
+  background: rgb(0,0,0);
+  color: white;
+  font-size: 30px;
+  font-family:  Times, Times New Roman, serif;
+  font-size: 50px;
+
+}
+
+
+.nav-button1 {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 30px;
+    left: 45px;
+    font-family:  Times, Times New Roman, serif;
+}
+
+.nav-button2 {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 75px;
+    left: 45px;
+    font-family:  Times, Times New Roman, serif;
+}
+
+.nav-button1:hover {
+    color: gray;
+    text-decoration: none;
+    position: absolute;
+    top: 30px;
+    left: 45px;
+}
+
+.nav-button2:hover {
+    color: gray;
+    text-decoration: none;
+    position: absolute;
+    top: 75px;
+    left: 45px;
+}
+
+#ingredients-container {
+    height: 700px;
+    flex-wrap: wrap;
+    color: white;
+    background: rgb(30,30,30, .7);
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 25px;
+
+}
+
+#il {
+text-align: center;
+    font-family:  Times, Times New Roman, serif;
+    color: white;
+}
